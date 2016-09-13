@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socialdemokraterna's Dominance Over Swedish Politics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+    <style>
+
+    .ct-chart {
+        height: 550px;
+        width: 1100px;
+        margin: auto;
+      }
+    .ct-series-a .ct-line {
+    stroke: red;
+    stroke-width: 10px;
+  }
+    .ct-series-b .ct-line {
+    stroke: blue;
+    stroke-width: 10px;
+  }
+    .ct-series-a .ct-point {
+    stroke: black;
+    stroke-width: 20px;
+  }
+    .ct-series-b .ct-point {
+    stroke: black;
+    stroke-width: 20px;
+  }
+
+  h1 {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        font-family: Impact;
+      }
+      .ct-label {
+        font-family: Impact;
+        font-size: 12px;
+        color: black;
+      }
+
+            body {
+        background-image: url(Untitled.jpeg);
+        background-size: 1500px 1100px;
+        background-repeat: no-repeat;
+      }
+      .page-description {
+        border: 4px solid black;
+        margin: 2px;
+        text-align: center;
+        color: black;
+        padding: 20px;
+        font-family: Impact;
+        font-size: 20px;
+
+      }
+
+    </style>
+
+  <title>Title of the document</title>
+
+  </head>
+
+
+  <body>
+  <h1>Socialdemokraterna's Dominance Over Swedish Politics</h1>
+
+  <p class="page-description">This chart shows the percentage of seats in Riksdag occupied by the two largest parties in Swedish Democracy - being Socialdemokraterna (red) a constant, and the other changing between Liberalerna, Centerpartiet and Moderaterna (blue), depending on the election.</p>
+
+<div class="ct-chart ct-perfect-fourth"></div>
+
+<script>
+  var data = {
+    labels: ['1911', '1914', '1914', '1917', '1920', '1921', '1924', '1928', '1932', '1936', '1940', '1944', '1948', '1952', '1956', '1958', '1960', '1964', '1968', '1970', '1973', '1976', '1979', '1982', '1985', '1988', '1991', '1994', '1998', '2002', '2006', '2010', '2014'],
+    series: [
+      [28.5, 30.1, 36.4, 31.1, 29.7, 36.2, 41.1, 37, 41.7, 45.9, 53.8, 46.7, 46.1, 46.1, 44.6, 46.2, 47.8, 47.3, 50.1, 45.3, 43.6, 42.7, 43.2, 45.6, 44.7, 43.2, 37.6, 45.3, 36.4, 39.9, 35, 30.7, 31],
+      [40.2, 37.7, 36.5, 27.6, 27.9, 25.8, 26.1, 29.4, 23.5, 17.6, 18, 15.9, 22.8, 24.4, 23.8, 19.5, 17.5, 17, 15.7, 19.9, 25.1, 24.1, 20.3, 23.6, 21.3, 18.3, 21.9, 22.4, 22.9, 15.3, 26.2, 30.1, 23.3],
+    ],
+  };
+  new Chartist.Line('.ct-chart', data, {
+    fullWidth: true,
+    chartPadding: {
+      right: 40
+    },
+    axisY: {
+      labelInterpolationFnc: function(value) {
+        return value + '%';
+      }
+    },
+    low: 0
+  });
+</script>
+
+    <iframe src="https://www.youtube.com/embed/Uza0ElZhTBQ"
+   width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+  </body>
+
+</html>
